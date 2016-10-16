@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:id="@+id/feilei_list_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="15dp"
+    android:textColor="@drawable/listview_textcolor"
+    android:textSize="15sp"
+    android:text="adsf"
+    android:background="@drawable/select_fenleilistview"/>
+</LinearLayout>

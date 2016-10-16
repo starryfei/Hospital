@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cyansoft.maodou_manger.Activity.SuosuoActivity">
+
+    <LinearLayout
+        android:id="@+id/sousuo_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#39495D"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/sousuo_edittxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:editable="false"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:background="@drawable/sousuo_bj"
+            android:drawableLeft="@mipmap/abc_ic_search_api_holo_light"
+            android:hint="输入医生姓名或科室类别"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sousuo_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#39495D"
+            android:gravity="center|center_horizontal"
+            android:text="搜索"
+            android:textColor="#FAFAFA"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <com.demievil.library.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_co"
+        android:layout_below="@+id/sousuo_LinearLayout">
+    <ListView
+
+        android:id="@+id/list_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sousuo_LinearLayout">
+
+    </ListView>
+</com.demievil.library.RefreshLayout>
+</RelativeLayout>

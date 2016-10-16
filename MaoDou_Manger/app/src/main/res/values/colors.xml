@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="press">#44BFBE</color>
+    <color name="normal">#D1D1D1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bai">#000000</color>
+    <color name="blue">#3FCCCB</color>
+    <color name="gray">#F1F1F1</color>
+    <color name="red">#FF9694</color>
+    <color name="nor">#FEFEFE</color>
+    <color name="home_title_bg">#b9f2fd</color>
+    <color name="home_title_bg2">#50b9f2fd</color>
+    <color name="home_bg">#daf7fc</color>
+    <color name="title_bg">#0cc4e5</color>
+    <color name="item_btn_bg">#B3B3B3</color>
+    <color name="black">#000000</color>
+    <color name="fbutton_default_shadow_color">#ff3493c8</color>
+    <color name="list_bg_normal">#FFFFFF</color>
+    <color name="google_red">#d62d20</color>
+    <color name="google_blue">#0057e7</color>
+    <color name="google_green">#008744</color>
+    <color name="google_yellow">#ffa700</color>
+</resources>

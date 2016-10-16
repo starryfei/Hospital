@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maodou.activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/back_textview_loginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:textColor="#3FCCCB"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/title_single_Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="用户登入"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_textview_loginActivity"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/UserName_login"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/icon_login_account"
+            android:drawablePadding="10dp"
+            android:hint="手机号/邮箱"
+            android:singleLine="true"
+            android:textColorHint="#D8D8D8"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="30dp"
+            android:background="#D8D8D8" />
+
+        <EditText
+            android:id="@+id/password_login"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:digits="abckefghizklmnopqrstuvwxyz1234567890*QWERTYUIOPASDFGHJKLZXCVBNM"
+            android:drawableLeft="@mipmap/icon_login_psd"
+            android:drawablePadding="10dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="#D8D8D8"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="30dp"
+            android:background="#D8D8D8" />
+
+        <Button
+            android:id="@+id/login_login_BUtton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/single_image"
+            android:singleLine="true"
+            android:text="登录"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/newUser_gotosingle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="新用户注册"
+                android:textColor="#3FCCCB"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="13dp"
+                android:layout_centerInParent="true"
+                android:background="#3FCCCB" />
+
+            <TextView
+                android:id="@+id/wangPassword_xiugai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="忘记密码？"
+                android:textColor="#3FCCCB"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/disanfang_layou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="17dp">
+
+        <TextView
+            android:id="@+id/taobao_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="7dp"
+            android:drawableTop="@mipmap/icon_login_taobao"
+            android:gravity="center"
+            android:text="淘宝"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/weixin_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="7dp"
+            android:drawableTop="@mipmap/icon_login_weixin"
+            android:gravity="center"
+            android:text="微信"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="7dp"
+            android:drawableTop="@mipmap/icon_login_qq"
+            android:gravity="center"
+            android:text="QQ"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/weibo_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="7dp"
+            android:drawableTop="@mipmap/icon_login_weibo"
+            android:gravity="center"
+            android:text="微博"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@id/disanfang_layou"
+        android:layout_marginBottom="23dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#e2e2e2" />
+
+        <TextView
+            android:id="@+id/disanfang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="第三方登录"
+            android:textColor="#D8D8D8" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/disanfang"
+            android:layout_weight="1"
+            android:background="#e2e2e2" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:id="@+id/title"
+        android:orientation="horizontal"
+        android:background="@color/normal">
+
+        <ImageView
+            android:id="@+id/i_back"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/com_taobao_tae_sdk_web_view_title_bar_back" />
+
+        <TextView
+            android:id="@+id/textview_diy_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/i_back"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预约列表"
+            android:textColor="#050505"
+            android:textColorHint="#050505"
+            android:textSize="18sp"
+            android:theme="@style/Base.AlertDialog.AppCompat" />
+    </RelativeLayout>
+    <com.demievil.library.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_containe"
+        android:layout_below="@+id/title">
+    <ListView
+        android:id="@+id/listview_yuyue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:dividerHeight="1dp"/>
+</com.demievil.library.RefreshLayout>
+    <LinearLayout
+        android:id="@+id/layout_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+        <CheckBox
+            android:id="@+id/checkbox_chooseall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text=" 全选"
+            android:button="@drawable/button_checked" />
+        <TextView
+            android:id="@+id/total_money"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/commit_order"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="提交订单"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@color/red"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cyansoft.maodou_manger.Activity.SuosuoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/ddd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/com_taobao_tae_sdk_web_view_title_bar_back" />
+
+        <TextView
+            android:id="@+id/textview_diy_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/img"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="停诊预约"
+            android:textColor="#050505"
+            android:textColorHint="#050505"
+            android:textSize="20sp"
+            android:theme="@style/Base.AlertDialog.AppCompat" />
+    </RelativeLayout>
+
+    <com.demievil.library.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_container"
+        android:layout_below="@+id/ddd">
+        <ListView
+            android:id="@+id/list_d"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ddd">
+
+        </ListView>
+
+    </com.demievil.library.RefreshLayout>
+
+
+</RelativeLayout>

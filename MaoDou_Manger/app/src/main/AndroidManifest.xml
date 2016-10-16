@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyansoft.maodou_manger">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission  android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".Activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.SingleActivity" />
+        <activity android:name=".Activity.SuosuoActivity" />
+        <activity android:name=".Activity.FirstActivity" />
+
+        <!-- // 在application的onCreate中初始化 -->
+        <!--  -->
+        <!-- @Override -->
+        <!-- public void onCreate() { -->
+        <!-- super.onCreate(); -->
+        <!-- x.Ext.init(this); // 这一步之后, 我们就可以在任何地方使用x.app()来获取Application的实例了. -->
+        <!-- x.Ext.setDebug(true); // 是否输出debug日志 -->
+        <!-- ... -->
+        <!-- } -->
+        <activity android:name=".Activity.DoctorDetailsActivity" />
+        <activity android:name=".Activity.AddDoctorActivity" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.ReservationActivity" />
+        <activity android:name=".Activity.PayDoctorActivity" />
+        <activity android:name=".Activity.UpdateInfoActivity" />
+        <activity android:name=".Activity.AddClassActivity" />
+        <activity android:name=".Activity.StopActivity"></activity>
+    </application>
+
+</manifest>
