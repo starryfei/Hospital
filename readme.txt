@@ -1,2 +1,1 @@
-Git is a distributed version control system.
-Git is free software.
+医院挂号管理系统的Android客户端
